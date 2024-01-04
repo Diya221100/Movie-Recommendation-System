@@ -1,31 +1,29 @@
-# Gold Price Prediction Project
+# Movie Recommendation System
+
+## [Dataset](https://drive.google.com/file/d/1cCkwiVv4mgfl20ntgY3n4yApcWqqZQe6/view)
 
 ## Overview
-This project aims to predict gold prices using machine learning techniques. The predictive models utilized include Support Vector Regression (SVR), Random Forest, and Decision Tree.
 
-- [Data](https://raw.githubusercontent.com/amankharwal/Website-data/master/gold_price.csv)
-- Models
-- Results
+This repository houses a Movie Recommendation System developed through machine learning techniques. The system utilizes cosine similarity to assess the resemblance between movies, employing feature vectors derived from textual data. The primary objective is to deliver personalized movie recommendations based on user input.
 
-## Models
-1. **Support Vector Regression (SVR):**
-   - Utilizes the Radial Basis Function (RBF) kernel to capture non-linear relationships.
+## Features
 
-2. **Random Forest:**
-   - An ensemble of decision trees to handle complex patterns and feature interactions.
+- **Cosine Similarity:** The recommendation system incorporates cosine similarity to gauge the similarity between movies. This metric aids in identifying movies with comparable characteristics, enhancing the precision of recommendations.
 
-3. **Decision Tree:**
-   - A single decision tree for capturing patterns and relationships within the dataset.
+- **Textual Data Conversion:** The system converts textual data of movies into feature vectors. This transformation facilitates effective comparison and similarity score calculation, contributing to accurate and relevant movie suggestions.
 
-## Getting Started
-To set up the project locally, follow these steps:
+## Usage
 
-   ```bash
-   git clone https://github.com/Diya221100/gold-price-prediction.git
-   cd gold-price-prediction
-   ```
+1. **Input:** Users can input a movie title, and the system will generate a list of recommended movies based on cosine similarity.
 
-## Results
-- Evaluate model performance using metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE).
-- Visualize predictions against actual gold prices.
-- Interpret feature importance for insights into the factors influencing predictions.
+2. **Output:** The system outputs a curated list of recommended movies, ranked by their similarity to the input movie.
+
+## Implementation
+
+The system is implemented in Python, utilizing prominent machine learning libraries for feature extraction and similarity calculation. The dataset used for training and testing the recommendation system encompasses comprehensive movie information.
+
+## Problem Statement
+
+Develop a Movie Recommendation System using machine learning methodologies. The system should seamlessly take a movie title as input from the user and generate a list of similar movies based on cosine similarity. The primary challenge lies in effectively transforming textual movie data into feature vectors and implementing cosine similarity to provide accurate and relevant recommendations.
+
+User-friendliness is a crucial aspect of the system, ensuring an intuitive interface for users to input their movie preferences and receive personalized suggestions. Successfully overcoming these challenges will not only enhance the user experience but also contribute to the discovery of movies tailored to individual tastes.
